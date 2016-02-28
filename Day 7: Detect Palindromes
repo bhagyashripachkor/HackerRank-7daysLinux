@@ -1,0 +1,7 @@
+while read word; 
+do
+reverseWord=`echo $word | rev | tr -d "\r"`
+if [ $(echo $word | tr -d "\r") == $reverseWord ]; then
+echo "$word"
+fi
+done
